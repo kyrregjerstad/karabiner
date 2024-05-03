@@ -133,6 +133,15 @@ export type SoftwareFunction = {
 	iokit_power_management_sleep_system?: {};
 };
 
+export type SimpleModification = {
+	from: {
+		key_code: KeyCode;
+	};
+	to: {
+		key_code: KeyCode;
+	}[];
+};
+
 export type KeyCode =
 	| 'caps_lock'
 	| 'left_control'

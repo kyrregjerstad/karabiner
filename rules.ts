@@ -1,7 +1,7 @@
 import type { KarabinerRule } from './types';
 import { app, createHyperSubLayers, open, vsCodeFnSwitch } from './utils';
 
-export const rules: KarabinerRule[] = [
+export const complexModifications: KarabinerRule[] = [
 	// Define the Hyper key
 	{
 		description: 'Hyper Key (⌃⌥⇧⌘)',

@@ -1,4 +1,4 @@
-import type { To, KeyCode, Manipulator, KarabinerRule } from './types';
+import type { To, KeyCode, Manipulator, KarabinerRule, SimpleModification } from './types';
 
 /**
  * Custom way to describe a command in a layer
@@ -136,11 +136,11 @@ export function createHyperSubLayers(subLayers: {
 							],
 						},
 					],
-			  }
+				}
 			: {
 					description: `Hyper Key sublayer "${key}"`,
 					manipulators: createHyperSubLayer(key as KeyCode, value, allSubLayerVariables),
-			  }
+				}
 	);
 }
 
@@ -230,3 +230,18 @@ export function vsCodeFnSwitch(): KarabinerRule {
 		],
 	};
 }
+
+const switchKey = (from: KeyCode, to: KeyCode): SimpleModification => ({
+	from: {
+		key_code: from,
+	},
+	to: [
+		{
+			key_code: to,
+		},
+	],
+});
+
+const swapKeys = (from: KeyCode, to: KeyCode): SimpleModification[] => [switchKey(from, to), switchKey(to, from)];
+
+export const norwegianKeyboardMod = () => [...swapKeys('grave_accent_and_tilde', 'non_us_backslash')];

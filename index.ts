@@ -1,5 +1,6 @@
-import { rules } from './rules';
+import { complexModifications } from './rules';
 import type { KarabinerRule } from './types';
+import { norwegianKeyboardMod } from './utils';
 
 function defaultConfig(rules: KarabinerRule[]) {
 	return {
@@ -12,6 +13,7 @@ function defaultConfig(rules: KarabinerRule[]) {
 				complex_modifications: {
 					rules,
 				},
+				simple_modifications: [...norwegianKeyboardMod()],
 			},
 		],
 	};
@@ -19,12 +21,10 @@ function defaultConfig(rules: KarabinerRule[]) {
 
 const startTime = Date.now();
 
-await Bun.write('karabiner.json', JSON.stringify(defaultConfig(rules), null, 2));
+await Bun.write('karabiner.json', JSON.stringify(defaultConfig(complexModifications), null, 2));
 
-// End timing
 const endTime = Date.now();
 
-// Calculate duration
 const duration = endTime - startTime;
 
 console.log('Wrote karabiner.json 🥳');

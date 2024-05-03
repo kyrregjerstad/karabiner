@@ -55,8 +55,10 @@ export const complexModifications: KarabinerRule[] = [
 		],
 	},
 	...createHyperSubLayers({
-		// a for "accessibility"
-		a: {
+		// b = "B"rowse
+		b: {},
+		// e for "Edit"
+		e: {
 			h: {
 				to: [{ key_code: 'left_arrow' }],
 			},
@@ -69,9 +71,25 @@ export const complexModifications: KarabinerRule[] = [
 			l: {
 				to: [{ key_code: 'right_arrow' }],
 			},
+			u: {
+				to: [{ key_code: 'page_up' }],
+			},
+			m: {
+				to: [{ key_code: 'page_down' }],
+			},
+			y: {
+				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'shift'] }],
+			},
+			n: {
+				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'shift'] }],
+			},
+			o: {
+				to: [{ key_code: 'right_arrow', modifiers: ['left_command'] }],
+			},
+			p: {
+				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'shift'] }],
+			},
 		},
-		// b = "B"rowse
-		b: {},
 		// o = "Open" applications
 		o: {
 			1: app('1Password'),
@@ -82,6 +100,7 @@ export const complexModifications: KarabinerRule[] = [
 			d: app('Discord'),
 			s: app('Slack'),
 			n: app('Notion'),
+			m: app('WhatsApp'),
 			w: app('Warp'),
 			f: app('Finder'),
 			p: app('Spotify'),
@@ -171,3 +190,5 @@ export const complexModifications: KarabinerRule[] = [
 	// switches the fn keys in vscode
 	vsCodeFnSwitch(),
 ];
+
+('');

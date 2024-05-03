@@ -190,5 +190,3 @@ export const complexModifications: KarabinerRule[] = [
 	// switches the fn keys in vscode
 	vsCodeFnSwitch(),
 ];
-
-('');

@@ -245,3 +245,29 @@ const switchKey = (from: KeyCode, to: KeyCode): SimpleModification => ({
 const swapKeys = (from: KeyCode, to: KeyCode): SimpleModification[] => [switchKey(from, to), switchKey(to, from)];
 
 export const norwegianKeyboardMod = () => [...swapKeys('grave_accent_and_tilde', 'non_us_backslash')];
+
+export const internalKeyboard = () => [
+	{
+		identifiers: {
+			is_game_pad: false,
+			is_keyboard: true,
+			is_pointing_device: false,
+			product_id: 835,
+			vendor_id: 1452,
+		},
+		simple_modifications: [...norwegianKeyboardMod()],
+	},
+];
+
+export const keychronK2 = () => [
+	{
+		identifiers: {
+			is_game_pad: false,
+			is_keyboard: true,
+			is_pointing_device: false,
+			product_id: 591,
+			vendor_id: 1452,
+		},
+		simple_modifications: [switchKey('close_bracket', 'non_us_backslash')],
+	},
+];

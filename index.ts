@@ -1,6 +1,6 @@
 import { complexModifications } from './rules';
 import type { KarabinerRule } from './types';
-import { norwegianKeyboardMod } from './utils';
+import { internalKeyboard, keychronK2 } from './utils';
 
 function defaultConfig(rules: KarabinerRule[]) {
 	return {
@@ -13,7 +13,7 @@ function defaultConfig(rules: KarabinerRule[]) {
 				complex_modifications: {
 					rules,
 				},
-				simple_modifications: [...norwegianKeyboardMod()],
+				devices: [...internalKeyboard(), ...keychronK2()],
 			},
 		],
 	};

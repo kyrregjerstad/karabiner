@@ -89,6 +89,9 @@ export const complexModifications: KarabinerRule[] = [
 			p: {
 				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'shift'] }],
 			},
+			return_or_enter: {
+				to: [{ key_code: 'f12' }],
+			},
 		},
 		// o = "Open" applications
 		o: {
@@ -104,6 +107,7 @@ export const complexModifications: KarabinerRule[] = [
 			w: app('Warp'),
 			f: app('Finder'),
 			p: app('Spotify'),
+			h: app('HTTPie'),
 		},
 		// s = "System"
 		s: {

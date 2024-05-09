@@ -19,13 +19,11 @@ function defaultConfig(rules: KarabinerRule[]) {
 	};
 }
 
-const startTime = Date.now();
+const outDir = 'karabiner.json';
+const startTime = performance.now();
+await Bun.write(outDir, JSON.stringify(defaultConfig(complexModifications), null, 2));
 
-await Bun.write('karabiner.json', JSON.stringify(defaultConfig(complexModifications), null, 2));
-
-const endTime = Date.now();
-
+const endTime = performance.now();
 const duration = endTime - startTime;
 
-console.log('Wrote karabiner.json 🥳');
-console.log(`Process took ${duration} milliseconds 🚀`);
+console.log(`Wrote ${outDir} - Process took ${duration.toFixed(2)} milliseconds 🚀`);

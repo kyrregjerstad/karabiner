@@ -1,4 +1,4 @@
-import type { To, KeyCode, Manipulator, KarabinerRule, SimpleModification } from './types';
+import type { To, KeyCode, Manipulator, KarabinerRule, SimpleModification, ModifierKeyCode } from './types';
 
 /**
  * Custom way to describe a command in a layer
@@ -12,6 +12,8 @@ type HyperKeySubLayer = {
 	// The ? is necessary, otherwise we'd have to define something for _every_ key code
 	[key_code in KeyCode]?: LayerCommand;
 };
+
+export const hyper = ['left_control', 'left_option', 'left_shift', 'left_command'] satisfies ModifierKeyCode[];
 
 /**
  * Create a Hyper Key sublayer, where every command is prefixed with a key

@@ -105,7 +105,7 @@ export type To = {
 	key_code?: KeyCode;
 	consumer_key_code?: string;
 	apple_vendor_keyboard_key_code?: string;
-	modifiers?: string[];
+	modifiers?: ModifierKeyCode[];
 	shell_command?: string;
 	set_variable?: {
 		name: string;
@@ -141,6 +141,18 @@ export type SimpleModification = {
 		key_code: KeyCode;
 	}[];
 };
+
+export type ModifierKeyCode =
+	| 'caps_lock'
+	| 'left_control'
+	| 'left_shift'
+	| 'left_option'
+	| 'left_command'
+	| 'right_control'
+	| 'right_shift'
+	| 'right_option'
+	| 'right_command'
+	| 'fn';
 
 export type KeyCode =
 	| 'caps_lock'

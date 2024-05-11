@@ -1,5 +1,5 @@
 import type { KarabinerRule } from './types';
-import { app, createHyperSubLayers, open, vsCodeFnSwitch } from './utils';
+import { app, createHyperSubLayers, hyper, open, vsCodeFnSwitch } from './utils';
 
 export const complexModifications: KarabinerRule[] = [
 	// Define the Hyper key
@@ -78,16 +78,19 @@ export const complexModifications: KarabinerRule[] = [
 				to: [{ key_code: 'page_down' }],
 			},
 			y: {
-				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'shift'] }],
+				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'left_shift'] }],
 			},
 			n: {
-				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'shift'] }],
+				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'left_shift'] }],
 			},
 			o: {
-				to: [{ key_code: 'right_arrow', modifiers: ['left_command'] }],
+				to: [{ key_code: 'left_arrow', modifiers: hyper }], // emmet - balance Outward
+			},
+			i: {
+				to: [{ key_code: 'right_arrow', modifiers: hyper }], // emmet - balance Inward
 			},
 			p: {
-				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'shift'] }],
+				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'left_shift'] }],
 			},
 			return_or_enter: {
 				to: [{ key_code: 'f12' }],

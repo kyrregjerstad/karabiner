@@ -93,7 +93,10 @@ export const complexModifications: KarabinerRule[] = [
 				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'left_shift'] }],
 			},
 			return_or_enter: {
-				to: [{ key_code: 'f12' }],
+				to: [{ key_code: 'f12' }], // vscode - go to definition
+			},
+			g: {
+				to: [{ key_code: 'right_arrow', modifiers: ['left_control', 'left_command'] }], // vscode - next Group
 			},
 		},
 		// o = "Open" applications
@@ -182,16 +185,16 @@ export const complexModifications: KarabinerRule[] = [
 		},
 		// r = "Raycast"
 		r: {
-			n: open('raycast://script-commands/dismiss-notifications'),
-			l: open('raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink'),
-			e: open('raycast://extensions/raycast/emoji-symbols/search-emoji-symbols'),
-			c: open('raycast://extensions/raycast/system/open-camera'),
-			p: open('raycast://extensions/raycast/raycast/confetti'),
-			a: open('raycast://extensions/raycast/raycast-ai/ai-chat'),
-			s: open('raycast://extensions/peduarte/silent-mention/index'),
-			h: open('raycast://extensions/raycast/clipboard-history/clipboard-history'),
 			1: open('raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1'),
 			2: open('raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2'),
+			a: open('raycast://extensions/raycast/raycast-ai/ai-chat'),
+			b: open('raycast://extensions/raycast/system/toggle-bluetooth'),
+			c: open('raycast://extensions/raycast/system/open-camera'),
+			e: open('raycast://extensions/raycast/emoji-symbols/search-emoji-symbols'),
+			h: open('raycast://extensions/raycast/clipboard-history/clipboard-history'),
+			n: open('raycast://script-commands/dismiss-notifications'),
+			p: open('raycast://extensions/raycast/raycast/confetti'),
+			t: open('raycast://extensions/raycast/system/toggle-system-appearance'),
 		},
 	}),
 	// switches the fn keys in vscode

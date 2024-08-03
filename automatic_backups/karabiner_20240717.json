@@ -1381,13 +1381,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/raycast-ai/ai-chat"
+                    "shell_command": "open raycast://script-commands/dismiss-notifications"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat",
+                "description": "Open raycast://script-commands/dismiss-notifications",
                 "type": "basic",
                 "from": {
-                  "key_code": "a",
+                  "key_code": "n",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -1405,37 +1405,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/system/toggle-bluetooth"
+                    "shell_command": "open raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/system/toggle-bluetooth",
+                "description": "Open raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink",
                 "type": "basic",
                 "from": {
-                  "key_code": "b",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open raycast://extensions/raycast/system/open-camera"
-                  }
-                ],
-                "description": "Open raycast://extensions/raycast/system/open-camera",
-                "type": "basic",
-                "from": {
-                  "key_code": "c",
+                  "key_code": "l",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -1477,37 +1453,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/clipboard-history/clipboard-history"
+                    "shell_command": "open raycast://extensions/raycast/system/open-camera"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/clipboard-history/clipboard-history",
+                "description": "Open raycast://extensions/raycast/system/open-camera",
                 "type": "basic",
                 "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open raycast://script-commands/dismiss-notifications"
-                  }
-                ],
-                "description": "Open raycast://script-commands/dismiss-notifications",
-                "type": "basic",
-                "from": {
-                  "key_code": "n",
+                  "key_code": "c",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -1549,13 +1501,61 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/system/toggle-system-appearance"
+                    "shell_command": "open raycast://extensions/raycast/raycast-ai/ai-chat"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/system/toggle-system-appearance",
+                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat",
                 "type": "basic",
                 "from": {
-                  "key_code": "t",
+                  "key_code": "a",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/peduarte/silent-mention/index"
+                  }
+                ],
+                "description": "Open raycast://extensions/peduarte/silent-mention/index",
+                "type": "basic",
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/raycast/clipboard-history/clipboard-history"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/clipboard-history/clipboard-history",
+                "type": "basic",
+                "from": {
+                  "key_code": "h",
                   "modifiers": {
                     "optional": [
                       "any"

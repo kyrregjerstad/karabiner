@@ -5,6 +5,7 @@
 	"author": "Kyrre Gjerstad",
 	"license": "MIT",
 	"devDependencies": {
+		"@types/bun": "^1.1.12",
 		"prettier": "^3.2.5"
 	},
 	"scripts": {

@@ -19,7 +19,7 @@ function defaultConfig(rules: KarabinerRule[]) {
 	};
 }
 
-const outDir = 'karabiner.json';
+const outDir = './karabiner/karabiner.json';
 const startTime = performance.now();
 await Bun.write(outDir, JSON.stringify(defaultConfig(complexModifications), null, 2));
 

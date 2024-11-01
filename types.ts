@@ -16,6 +16,7 @@ export type Manipulator = {
 
 export type Parameters = {
 	'basic.simultaneous_threshold_milliseconds'?: number;
+	'basic.to_if_alone_timeout_milliseconds'?: number;
 };
 
 type Conditions =

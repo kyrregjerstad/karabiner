@@ -1,5 +1,5 @@
 import type { KarabinerRule } from './types';
-import { app, createHyperSubLayers, hyper, open, vsCodeFnSwitch } from './utils';
+import { app, createHomeRowMods, createHyperSubLayers, hyper, open, vsCodeFnSwitch } from './utils';
 
 export const complexModifications: KarabinerRule[] = [
 	// Define the Hyper key
@@ -196,6 +196,10 @@ export const complexModifications: KarabinerRule[] = [
 			p: open('raycast://extensions/raycast/raycast/confetti'),
 			t: open('raycast://extensions/raycast/system/toggle-system-appearance'),
 		},
+	}),
+	createHomeRowMods({
+		a: { modifier: 'left_control', timeout: 175 },
+		s: { modifier: 'left_option', timeout: 175 },
 	}),
 	// switches the fn keys in vscode
 	vsCodeFnSwitch(),

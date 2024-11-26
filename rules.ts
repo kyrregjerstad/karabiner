@@ -105,7 +105,7 @@ export const complexModifications: KarabinerRule[] = [
 			a: app('Arc'),
 			b: app('Obsidian'),
 			c: app('Notion Calendar'),
-			v: app('Visual Studio Code'),
+			v: app('Cursor'),
 			d: app('Discord'),
 			s: app('Slack'),
 			n: app('Notion'),
@@ -196,10 +196,14 @@ export const complexModifications: KarabinerRule[] = [
 			p: open('raycast://extensions/raycast/raycast/confetti'),
 			t: open('raycast://extensions/raycast/system/toggle-system-appearance'),
 		},
-	}),
-	createHomeRowMods({
-		a: { modifier: 'left_control', timeout: 175 },
-		s: { modifier: 'left_option', timeout: 175 },
+		// w = "Window management"
+		w: {
+			h: open('raycast://extensions/raycast/window-management/left-half'),
+			j: open('raycast://extensions/raycast/window-management/bottom-right-quarter'),
+			k: open('raycast://extensions/raycast/window-management/top-right-quarter'),
+			l: open('raycast://extensions/raycast/window-management/right-half'),
+			f: open('raycast://extensions/raycast/window-management/maximize'),
+		},
 	}),
 	// switches the fn keys in vscode
 	vsCodeFnSwitch(),

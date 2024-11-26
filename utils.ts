@@ -157,7 +157,7 @@ export function open(what: string): LayerCommand {
 	return {
 		to: [
 			{
-				shell_command: `open ${what}`,
+				shell_command: `open -g ${what}`,
 			},
 		],
 		description: `Open ${what}`,

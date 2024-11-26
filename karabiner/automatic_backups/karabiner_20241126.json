@@ -1697,10 +1697,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -g raycast://extensions/raycast/window-management/bottom-right-quarter"
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/right-half"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/window-management/bottom-right-quarter",
+                "description": "Open raycast://extensions/raycast/window-management/right-half",
                 "type": "basic",
                 "from": {
                   "key_code": "j",
@@ -1745,37 +1745,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -g raycast://extensions/raycast/window-management/right-half"
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/bottom-right-quarter"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/window-management/right-half",
+                "description": "Open raycast://extensions/raycast/window-management/bottom-right-quarter",
                 "type": "basic",
                 "from": {
                   "key_code": "l",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open -g raycast://extensions/raycast/window-management/maximize"
-                  }
-                ],
-                "description": "Open raycast://extensions/raycast/window-management/maximize",
-                "type": "basic",
-                "from": {
-                  "key_code": "f",
                   "modifiers": {
                     "optional": [
                       "any"

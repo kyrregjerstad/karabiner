@@ -99,6 +99,10 @@ export const complexModifications: KarabinerRule[] = [
 				to: [{ key_code: 'right_arrow', modifiers: ['left_control', 'left_command'] }], // vscode - next Group
 			},
 		},
+		// m = "Mouse"
+		m: {
+			to: [{ key_code: 'm', modifiers: ['left_command', 'left_shift', 'left_option', 'left_control'] }],
+		},
 		// o = "Open" applications
 		o: {
 			1: app('1Password'),

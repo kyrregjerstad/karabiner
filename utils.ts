@@ -270,6 +270,5 @@ export const keychronK2 = () => [
 			product_id: 591,
 			vendor_id: 1452,
 		},
-		simple_modifications: [switchKey('close_bracket', 'non_us_backslash')],
 	},
 ];

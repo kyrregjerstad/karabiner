@@ -113,16 +113,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper",
                     "value": 1
                   }
@@ -194,16 +184,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
                     "value": 0
                   },
                   {
@@ -611,16 +591,6 @@
                     "type": "variable_if",
                     "name": "hyper_sublayer_w",
                     "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
                   }
                 ]
               }
@@ -690,16 +660,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
                     "value": 0
                   },
                   {
@@ -1091,16 +1051,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper",
                     "value": 1
                   }
@@ -1365,16 +1315,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper",
                     "value": 1
                   }
@@ -1515,16 +1455,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
                     "value": 0
                   },
                   {
@@ -1844,16 +1774,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper",
                     "value": 1
                   }
@@ -1982,171 +1902,13 @@
             ]
           },
           {
-            "description": "Hyper Key + open_bracket",
-            "manipulators": [
-              {
-                "to": [
-                  {
-                    "shell_command": "open -g raycast://extensions/raycast/window-management/left-half"
-                  }
-                ],
-                "description": "Open raycast://extensions/raycast/window-management/left-half",
-                "type": "basic",
-                "from": {
-                  "key_code": "open_bracket",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_e",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_m",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Hyper Key + close_bracket",
-            "manipulators": [
-              {
-                "to": [
-                  {
-                    "shell_command": "open -g raycast://extensions/raycast/window-management/right-half"
-                  }
-                ],
-                "description": "Open raycast://extensions/raycast/window-management/right-half",
-                "type": "basic",
-                "from": {
-                  "key_code": "close_bracket",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_e",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_m",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_open_bracket",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_close_bracket",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Use F1-F12 as standard function keys in VSCode and Cursor, with fn for media keys.",
+            "description": "Use F1-F12 as standard function keys in VSCode, with fn for media keys.",
             "manipulators": [
               {
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2170,7 +1932,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2197,7 +1959,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2221,7 +1983,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2248,7 +2010,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2272,7 +2034,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2299,7 +2061,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2323,7 +2085,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2350,7 +2112,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2374,7 +2136,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2401,7 +2163,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2425,7 +2187,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2452,7 +2214,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2476,7 +2238,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2503,7 +2265,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2527,7 +2289,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2554,7 +2316,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2578,7 +2340,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2605,7 +2367,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2629,7 +2391,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2656,7 +2418,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2680,7 +2442,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }

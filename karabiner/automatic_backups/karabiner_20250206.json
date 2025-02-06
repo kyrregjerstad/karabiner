@@ -2140,13 +2140,13 @@
             ]
           },
           {
-            "description": "Use F1-F12 as standard function keys in VSCode and Cursor, with fn for media keys.",
+            "description": "Use F1-F12 as standard function keys in VSCode, with fn for media keys.",
             "manipulators": [
               {
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2170,7 +2170,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2197,7 +2197,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2221,7 +2221,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2248,7 +2248,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2272,7 +2272,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2299,7 +2299,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2323,7 +2323,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2350,7 +2350,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2374,7 +2374,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2401,7 +2401,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2425,7 +2425,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2452,7 +2452,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2476,7 +2476,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2503,7 +2503,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2527,7 +2527,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2554,7 +2554,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2578,7 +2578,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2605,7 +2605,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2629,7 +2629,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2656,7 +2656,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }
@@ -2680,7 +2680,7 @@
                 "conditions": [
                   {
                     "bundle_identifiers": [
-                      "com.todesktop.230313mzl4w4u92"
+                      "^com\\.microsoft\\.VSCode$"
                     ],
                     "type": "frontmost_application_if"
                   }

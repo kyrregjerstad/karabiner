@@ -175,7 +175,7 @@ function switchFnKey(from: KeyCode, to: To): Manipulator[] {
 	const defaultBehavior = {
 		conditions: [
 			{
-				bundle_identifiers: ['^com\\.microsoft\\.VSCode$'],
+				bundle_identifiers: ['com.todesktop.230313mzl4w4u92'],
 				type: 'frontmost_application_if',
 			},
 		],
@@ -210,7 +210,7 @@ function switchFnKey(from: KeyCode, to: To): Manipulator[] {
 
 export function vsCodeFnSwitch(): KarabinerRule {
 	return {
-		description: 'Use F1-F12 as standard function keys in VSCode, with fn for media keys.',
+		description: 'Use F1-F12 as standard function keys in VSCode and Cursor, with fn for media keys.',
 		manipulators: [
 			...switchFnKey('f1', {
 				consumer_key_code: 'display_brightness_decrement',
@@ -273,41 +273,3 @@ export const keychronK2 = () => [
 		simple_modifications: [switchKey('close_bracket', 'non_us_backslash')],
 	},
 ];
-
-type HomeRowModifier = {
-	modifier: ModifierKeyCode;
-	timeout?: number;
-};
-
-type HomeRowConfig = {
-	[key_code in KeyCode]?: HomeRowModifier;
-};
-
-export function createHomeRowMods(config: HomeRowConfig): KarabinerRule {
-	return {
-		description: 'Home Row Mods',
-		manipulators: Object.entries(config).map(([key, value]) => ({
-			type: 'basic',
-			description: `${key} -> ${value.modifier} when held, ${key} when tapped`,
-			from: {
-				key_code: key as KeyCode,
-				modifiers: {
-					optional: ['any'],
-				},
-			},
-			to: [
-				{
-					key_code: value.modifier,
-				},
-			],
-			to_if_alone: [
-				{
-					key_code: key as KeyCode,
-				},
-			],
-			parameters: {
-				'basic.to_if_alone_timeout_milliseconds': value.timeout ?? 175,
-			},
-		})),
-	};
-}

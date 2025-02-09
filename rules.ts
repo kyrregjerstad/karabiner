@@ -208,6 +208,7 @@ export const complexModifications: KarabinerRule[] = [
 		},
 		open_bracket: open('raycast://extensions/raycast/window-management/left-half'),
 		close_bracket: open('raycast://extensions/raycast/window-management/right-half'),
+		return_or_enter: open('raycast://extensions/raycast/window-management/maximize'),
 	}),
 	// switches the fn keys in vscode
 	vsCodeFnSwitch(),

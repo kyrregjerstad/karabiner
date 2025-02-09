@@ -80,6 +80,11 @@
                                         "value": 0
                                     },
                                     {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
                                         "name": "hyper",
                                         "type": "variable_if",
                                         "value": 1
@@ -389,6 +394,11 @@
                                         "name": "hyper_sublayer_close_bracket",
                                         "type": "variable_if",
                                         "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
                                     }
                                 ],
                                 "from": {
@@ -447,6 +457,11 @@
                                     },
                                     {
                                         "name": "hyper_sublayer_close_bracket",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_return_or_enter",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -735,6 +750,11 @@
                                         "value": 0
                                     },
                                     {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
                                         "name": "hyper",
                                         "type": "variable_if",
                                         "value": 1
@@ -937,6 +957,11 @@
                                         "value": 0
                                     },
                                     {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
                                         "name": "hyper",
                                         "type": "variable_if",
                                         "value": 1
@@ -1054,6 +1079,11 @@
                                     },
                                     {
                                         "name": "hyper_sublayer_close_bracket",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_return_or_enter",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -1294,6 +1324,11 @@
                                         "value": 0
                                     },
                                     {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
                                         "name": "hyper",
                                         "type": "variable_if",
                                         "value": 1
@@ -1458,6 +1493,11 @@
                                         "name": "hyper_sublayer_close_bracket",
                                         "type": "variable_if",
                                         "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
                                     }
                                 ],
                                 "description": "Open raycast://extensions/raycast/window-management/left-half",
@@ -1524,6 +1564,11 @@
                                         "name": "hyper_sublayer_close_bracket",
                                         "type": "variable_if",
                                         "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
                                     }
                                 ],
                                 "description": "Open raycast://extensions/raycast/window-management/right-half",
@@ -1532,6 +1577,77 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open -g raycast://extensions/raycast/window-management/right-half" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key + return_or_enter",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_e",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_m",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_c",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_r",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_open_bracket",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_close_bracket",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_return_or_enter",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "description": "Open raycast://extensions/raycast/window-management/maximize",
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -g raycast://extensions/raycast/window-management/maximize" }],
                                 "type": "basic"
                             }
                         ]

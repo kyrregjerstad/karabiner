@@ -247,6 +247,7 @@ const switchKey = (from: KeyCode, to: KeyCode): SimpleModification => ({
 const swapKeys = (from: KeyCode, to: KeyCode): SimpleModification[] => [switchKey(from, to), switchKey(to, from)];
 
 export const norwegianKeyboardMod = () => [...swapKeys('grave_accent_and_tilde', 'non_us_backslash')];
+export const keychronK2Mod = () => [...swapKeys('grave_accent_and_tilde', 'non_us_backslash')];
 
 export const internalKeyboard = () => [
 	{
@@ -261,14 +262,54 @@ export const internalKeyboard = () => [
 	},
 ];
 
+const keychronK2Identifiers = {
+	is_game_pad: false,
+	is_keyboard: true,
+	is_pointing_device: false,
+	product_id: 591,
+	vendor_id: 1452,
+};
+
 export const keychronK2 = () => [
 	{
-		identifiers: {
-			is_game_pad: false,
-			is_keyboard: true,
-			is_pointing_device: false,
-			product_id: 591,
-			vendor_id: 1452,
-		},
+		identifiers: keychronK2Identifiers,
 	},
 ];
+
+export function fnKeyRemapping(): KarabinerRule[] {
+	return [
+		{
+			description: 'Fn key remapping',
+			manipulators: [
+				{
+					type: 'basic',
+					description: 'Fn -> Right Option',
+					from: {
+						apple_vendor_top_case_key_code: 'keyboard_fn',
+					},
+					to: [
+						{
+							key_code: 'right_option',
+						},
+					],
+				},
+			],
+		},
+		{
+			description: 'Right Control -> Fn',
+			manipulators: [
+				{
+					type: 'basic',
+					from: {
+						key_code: 'right_control',
+					},
+					to: [
+						{
+							apple_vendor_top_case_key_code: 'keyboard_fn',
+						},
+					],
+				},
+			],
+		},
+	];
+}

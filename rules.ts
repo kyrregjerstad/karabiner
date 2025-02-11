@@ -1,5 +1,5 @@
 import type { KarabinerRule } from './types';
-import { app, createHyperSubLayers, hyper, open, vsCodeFnSwitch } from './utils';
+import { app, createHyperSubLayers, hyper, open, vsCodeFnSwitch, fnKeyRemapping } from './utils';
 
 export const complexModifications: KarabinerRule[] = [
 	// Define the Hyper key
@@ -54,6 +54,7 @@ export const complexModifications: KarabinerRule[] = [
 			//      },
 		],
 	},
+	...fnKeyRemapping(),
 	...createHyperSubLayers({
 		// e for "Edit"
 		e: {
@@ -91,7 +92,7 @@ export const complexModifications: KarabinerRule[] = [
 				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'left_shift'] }],
 			},
 			return_or_enter: {
-				to: [{ key_code: 'f12' }], // vscode - go to definition
+				to: [{ key_code: 'f12', modifiers: ['fn'] }], // vscode - go to definition
 			},
 			g: {
 				to: [{ key_code: 'right_arrow', modifiers: ['left_control', 'left_command'] }], // vscode - next Group

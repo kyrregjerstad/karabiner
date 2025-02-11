@@ -46,33 +46,28 @@
             ]
           },
           {
-            "description": "Fn key remapping",
+            "description": "Fn key remapping for Keychron K2",
             "manipulators": [
               {
-                "type": "basic",
-                "description": "Fn -> Right Option",
-                "from": {
-                  "apple_vendor_top_case_key_code": "keyboard_fn"
-                },
-                "to": [
-                  {
-                    "key_code": "right_option"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "Right Control -> Fn",
-            "manipulators": [
-              {
-                "type": "basic",
                 "from": {
                   "key_code": "right_control"
                 },
                 "to": [
                   {
-                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                    "key_code": "fn"
+                  }
+                ],
+                "type": "basic",
+                "conditions": [
+                  {
+                    "type": "device_if",
+                    "identifiers": {
+                      "is_game_pad": false,
+                      "is_keyboard": true,
+                      "is_pointing_device": false,
+                      "product_id": 591,
+                      "vendor_id": 1452
+                    }
                   }
                 ]
               }
@@ -441,10 +436,7 @@
               {
                 "to": [
                   {
-                    "key_code": "f12",
-                    "modifiers": [
-                      "fn"
-                    ]
+                    "key_code": "f12"
                   }
                 ],
                 "type": "basic",

@@ -95,6 +95,7 @@ export type From = {
 	simultaneous?: SimultaneousFrom[];
 	simultaneous_options?: SimultaneousOptions;
 	modifiers?: Modifiers;
+	apple_vendor_top_case_key_code?: AppleVendorTopCaseKeyCode;
 };
 
 export type Modifiers = {
@@ -105,7 +106,9 @@ export type Modifiers = {
 export type To = {
 	key_code?: KeyCode;
 	consumer_key_code?: string;
-	apple_vendor_keyboard_key_code?: string;
+	apple_vendor_keyboard_key_code?: AppleVendorKeyboardKeyCode;
+	apple_vendor_top_case_key_code?: AppleVendorTopCaseKeyCode;
+
 	modifiers?: ModifierKeyCode[];
 	shell_command?: string;
 	set_variable?: {
@@ -438,3 +441,16 @@ export type KeyCode =
 	//   not_from: true
 	| 'volume_down'
 	| 'volume_up';
+
+type AppleVendorTopCaseKeyCode = 'keyboard_fn' | 'keyboard_control' | 'keyboard_option' | 'keyboard_command';
+type AppleVendorKeyboardKeyCode =
+	| 'mission_control'
+	| 'spotlight'
+	| 'dashboard'
+	| 'function'
+	| 'launchpad'
+	| 'expose_all'
+	| 'expose_desktop'
+	| 'brightness_up'
+	| 'brightness_down'
+	| 'language';

@@ -292,6 +292,12 @@ export function fnKeyRemapping(): KarabinerRule[] {
 							key_code: 'right_option',
 						},
 					],
+					conditions: [
+						{
+							type: 'device_exists_if',
+							identifiers: [keychronK2Identifiers],
+						},
+					],
 				},
 			],
 		},
@@ -306,6 +312,12 @@ export function fnKeyRemapping(): KarabinerRule[] {
 					to: [
 						{
 							apple_vendor_top_case_key_code: 'keyboard_fn',
+						},
+					],
+					conditions: [
+						{
+							type: 'device_exists_if',
+							identifiers: [keychronK2Identifiers],
 						},
 					],
 				},

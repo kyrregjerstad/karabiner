@@ -38,20 +38,6 @@
                         "description": "Fn key remapping",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "is_game_pad": false,
-                                                "is_keyboard": true,
-                                                "is_pointing_device": false,
-                                                "product_id": 591,
-                                                "vendor_id": 1452
-                                            }
-                                        ],
-                                        "type": "device_exists_if"
-                                    }
-                                ],
                                 "description": "Fn -> Right Option",
                                 "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
                                 "to": [{ "key_code": "right_option" }],
@@ -63,20 +49,6 @@
                         "description": "Right Control -> Fn",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "is_game_pad": false,
-                                                "is_keyboard": true,
-                                                "is_pointing_device": false,
-                                                "product_id": 591,
-                                                "vendor_id": 1452
-                                            }
-                                        ],
-                                        "type": "device_exists_if"
-                                    }
-                                ],
                                 "from": { "key_code": "right_control" },
                                 "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }],
                                 "type": "basic"

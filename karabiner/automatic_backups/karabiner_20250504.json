@@ -184,7 +184,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   },
                   {
@@ -608,7 +608,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   }
                 ]
@@ -693,7 +693,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   },
                   {
@@ -1095,7 +1095,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   },
                   {
@@ -1374,7 +1374,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   },
                   {
@@ -1533,7 +1533,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   },
                   {
@@ -1863,7 +1863,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   },
                   {
@@ -2072,7 +2072,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   }
                 ]
@@ -2156,7 +2156,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   }
                 ]
@@ -2240,7 +2240,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   }
                 ]
@@ -2248,20 +2248,17 @@
             ]
           },
           {
-            "description": "Hyper Key + tab",
+            "description": "Hyper Key + escape",
             "manipulators": [
               {
                 "to": [
                   {
-                    "key_code": "tab",
-                    "modifiers": [
-                      "left_control"
-                    ]
+                    "key_code": "caps_lock"
                   }
                 ],
                 "type": "basic",
                 "from": {
-                  "key_code": "tab",
+                  "key_code": "escape",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -2326,7 +2323,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_tab",
+                    "name": "hyper_sublayer_escape",
                     "value": 0
                   }
                 ]

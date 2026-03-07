@@ -213,6 +213,9 @@ export const complexModifications: KarabinerRule[] = [
 		tab: {
 			to: [{ key_code: 'tab', modifiers: ['left_control'] }],
 		},
+		t: {
+			to: [{ shell_command: "osascript -e 'tell application \"Ghostty\" to activate'" }],
+		},
 	}),
 	// switches the fn keys in vscode
 	vsCodeFnSwitch(),

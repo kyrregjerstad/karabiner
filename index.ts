@@ -1,6 +1,6 @@
-import { complexModifications } from './rules';
-import type { KarabinerRule } from './types';
-import { internalKeyboard, keychronK2 } from './utils';
+import { complexModifications } from "./rules";
+import type { KarabinerRule } from "./types";
+import { internalKeyboard, keychronK2 } from "./utils";
 
 function defaultConfig(rules: KarabinerRule[]) {
 	return {
@@ -9,7 +9,7 @@ function defaultConfig(rules: KarabinerRule[]) {
 		},
 		profiles: [
 			{
-				name: 'Default',
+				name: "Default",
 				complex_modifications: {
 					rules,
 				},
@@ -19,11 +19,16 @@ function defaultConfig(rules: KarabinerRule[]) {
 	};
 }
 
-const outDir = './karabiner/karabiner.json';
+const outDir = "./karabiner/karabiner.json";
 const startTime = performance.now();
-await Bun.write(outDir, JSON.stringify(defaultConfig(complexModifications), null, 2));
+await Bun.write(
+	outDir,
+	JSON.stringify(defaultConfig(complexModifications), null, 2),
+);
 
 const endTime = performance.now();
 const duration = endTime - startTime;
 
-console.log(`Wrote ${outDir} - Process took ${duration.toFixed(2)} milliseconds 🚀`);
+console.log(
+	`Wrote ${outDir} - Process took ${duration.toFixed(2)} milliseconds 🚀`,
+);

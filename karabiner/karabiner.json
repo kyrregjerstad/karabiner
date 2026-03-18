@@ -2394,7 +2394,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Ghostty\" to activate'"
+                    "shell_command": "osascript -e 'tell application \"cmux\" to activate'"
                   }
                 ],
                 "type": "basic",

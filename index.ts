@@ -1,6 +1,6 @@
 import { complexModifications } from "./rules";
 import type { KarabinerRule } from "./types";
-import { internalKeyboard, keychronK2 } from "./utils";
+import { internalKeyboard, keychronK2, rainy75 } from "./utils";
 
 function defaultConfig(rules: KarabinerRule[]) {
 	return {
@@ -13,7 +13,8 @@ function defaultConfig(rules: KarabinerRule[]) {
 				complex_modifications: {
 					rules,
 				},
-				devices: [...internalKeyboard(), ...keychronK2()],
+				devices: [...internalKeyboard(), ...keychronK2(), ...rainy75()],
+				virtual_hid_keyboard: { keyboard_type_v2: "ansi" },
 			},
 		],
 	};

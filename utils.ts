@@ -276,6 +276,18 @@ export const keychronK2 = () => [
 	},
 ];
 
+export const rainy75 = () => [
+	{
+		identifiers: {
+			is_keyboard: true,
+			is_pointing_device: true,
+			product_id: 33398,
+			vendor_id: 9306,
+		},
+		ignore: false,
+	},
+];
+
 export function fnKeyRemapping(): KarabinerRule[] {
 	return [
 		{

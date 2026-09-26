@@ -1,5 +1,5 @@
 import type { KarabinerRule } from './types';
-import { app, createHyperSubLayers, hyper, open, vsCodeFnSwitch, fnKeyRemapping } from './utils';
+import { app, createHyperSubLayers, open, vsCodeFnSwitch, fnKeyRemapping } from './utils';
 
 export const complexModifications: KarabinerRule[] = [
 	// Define the Hyper key
@@ -56,136 +56,17 @@ export const complexModifications: KarabinerRule[] = [
 	},
 	...fnKeyRemapping(),
 	...createHyperSubLayers({
-		// e for "Edit"
-		e: {
-			h: {
-				to: [{ key_code: 'left_arrow' }],
-			},
-			j: {
-				to: [{ key_code: 'down_arrow' }],
-			},
-			k: {
-				to: [{ key_code: 'up_arrow' }],
-			},
-			l: {
-				to: [{ key_code: 'right_arrow' }],
-			},
-			u: {
-				to: [{ key_code: 'page_up' }],
-			},
-			m: {
-				to: [{ key_code: 'page_down' }],
-			},
-			y: {
-				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'left_shift'] }],
-			},
-			n: {
-				to: [{ key_code: 'left_arrow', modifiers: ['left_command', 'left_shift'] }],
-			},
-			o: {
-				to: [{ key_code: 'left_arrow', modifiers: hyper }], // emmet - balance Outward
-			},
-			i: {
-				to: [{ key_code: 'right_arrow', modifiers: hyper }], // emmet - balance Inward
-			},
-			p: {
-				to: [{ key_code: 'right_arrow', modifiers: ['left_command', 'left_shift'] }],
-			},
-			return_or_enter: {
-				to: [{ key_code: 'f12', modifiers: ['fn'] }], // vscode - go to definition
-			},
-			g: {
-				to: [{ key_code: 'right_arrow', modifiers: ['left_control', 'left_command'] }], // vscode - next Group
-			},
+		b: app('Arc'),
+		c: app('Zed'),
+		m: app('Spotify'),
+		t: {
+			to: [{ shell_command: 'open -b com.cmuxterm.app' }],
 		},
-		// m = "Mouse"
-		m: {
-			to: [{ key_code: 'm', modifiers: ['left_command', 'left_shift', 'left_option', 'left_control'] }],
-		},
-		// o = "Open" applications
-		o: {
-			1: app('1Password'),
-			a: app('Arc'),
-			b: app('Obsidian'),
-			c: app('Notion Calendar'),
-			v: app('Cursor'),
-			d: app('Discord'),
-			s: app('Slack'),
-			n: app('Notion'),
-			m: app('WhatsApp'),
-			w: app('Warp'),
-			f: app('Finder'),
-			p: app('Spotify'),
-			h: app('HTTPie'),
-		},
-		// s = "System"
-		s: {
-			u: {
-				to: [
-					{
-						key_code: 'volume_increment',
-					},
-				],
-			},
-			j: {
-				to: [
-					{
-						key_code: 'volume_decrement',
-					},
-				],
-			},
-			i: {
-				to: [
-					{
-						key_code: 'display_brightness_increment',
-					},
-				],
-			},
-			k: {
-				to: [
-					{
-						key_code: 'display_brightness_decrement',
-					},
-				],
-			},
-			l: {
-				to: [
-					{
-						key_code: 'q',
-						modifiers: ['right_control', 'right_command'], // Lock screen
-					},
-				],
-			},
-			p: {
-				to: [
-					{
-						key_code: 'play_or_pause',
-					},
-				],
-			},
-			semicolon: {
-				to: [
-					{
-						key_code: 'fastforward',
-					},
-				],
-			},
-			// "D"o not disturb toggle
-			d: open(`raycast://extensions/yakitrak/do-not-disturb/toggle`),
-		},
-
-		// c = Musi*c* which isn't "m" because we want it to be on the left hand
-		c: {
-			p: {
-				to: [{ key_code: 'play_or_pause' }],
-			},
-			n: {
-				to: [{ key_code: 'fastforward' }],
-			},
-			b: {
-				to: [{ key_code: 'rewind' }],
-			},
-		},
+		p: app('1Password'),
+		f: app('Finder'),
+		s: app('Slack'),
+		o: app('Obsidian'),
+		n: app('Notion'),
 		// r = "Raycast"
 		r: {
 			1: open('raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1'),
@@ -199,22 +80,11 @@ export const complexModifications: KarabinerRule[] = [
 			p: open('raycast://extensions/raycast/raycast/confetti'),
 			t: open('raycast://extensions/raycast/system/toggle-system-appearance'),
 		},
-		// w = "Window management"
-		w: {
-			h: open('raycast://extensions/raycast/window-management/left-half'),
-			j: open('raycast://extensions/raycast/window-management/bottom-right-quarter'),
-			k: open('raycast://extensions/raycast/window-management/top-right-quarter'),
-			l: open('raycast://extensions/raycast/window-management/right-half'),
-			f: open('raycast://extensions/raycast/window-management/maximize'),
-		},
 		open_bracket: open('raycast://extensions/raycast/window-management/left-half'),
 		close_bracket: open('raycast://extensions/raycast/window-management/right-half'),
 		return_or_enter: open('raycast://extensions/raycast/window-management/maximize'),
 		tab: {
 			to: [{ key_code: 'tab', modifiers: ['left_control'] }],
-		},
-		t: {
-			to: [{ shell_command: "osascript -e 'tell application \"cmux\" to activate'" }],
 		},
 	}),
 	// switches the fn keys in vscode

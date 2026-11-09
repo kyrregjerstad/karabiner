@@ -55,3 +55,20 @@ bun run watch
 ```
 
 watches the TypeScript files and rebuilds whenever they change.
+
+## Tinycast
+
+The existing Caps Lock Hyper layer uses Tinycast. Hold Caps Lock + R, then
+press A for AI Chat, B for Bluetooth, C for camera, E for emoji, H for clipboard
+history, N to dismiss notifications, or T for system appearance. Keys 1 and 2
+run Toothpick's favorite-device commands, which require Toothpick installed and
+its favorites configured in Tinycast. Confetti has no equivalent and is unbound.
+Caps Lock + [ / ] / Enter runs left half / right half / maximize.
+
+Tinycast 0.12.1 supports extension URLs, but native commands require hotkeys.
+`tinycast.ts` defines the shortcuts emitted by Karabiner. Run `bun run tinycast.ts`
+once to register missing bindings in Tinycast, then restart Tinycast and run
+`bun run build`. Setup preserves matching bindings and refuses conflicting ones.
+Clipboard uses Option+V; the other native commands use Control+Option+Shift+Command
+with their corresponding key. Keep Tinycast running with the relevant features
+and macOS permissions enabled. AI Chat also requires Tinycast's AI setup.

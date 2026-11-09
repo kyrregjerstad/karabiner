@@ -1,3 +1,4 @@
+import { tinycast } from './tinycast';
 import type { KarabinerRule } from './types';
 import { app, createHyperSubLayers, open, vsCodeFnSwitch, fnKeyRemapping } from './utils';
 
@@ -56,33 +57,34 @@ export const complexModifications: KarabinerRule[] = [
 	},
 	...fnKeyRemapping(),
 	...createHyperSubLayers({
-		b: app('Arc'),
+		b: app('Helium'),
 		c: app('Zed'),
+		j: { to: [{ shell_command: "open -a 'T3 Code (Beta).app'" }] },
+		l: { to: [{ shell_command: "open -a 'Linear.app'" }] },
 		m: app('Spotify'),
 		t: {
-			to: [{ shell_command: 'open -b com.cmuxterm.app' }],
+			to: [{ shell_command: "open -a 'Rex Beta.app'" }],
 		},
 		p: app('1Password'),
 		f: app('Finder'),
 		s: app('Slack'),
 		o: app('Obsidian'),
 		n: app('Notion'),
-		// r = "Raycast"
+		// Keep the familiar r sublayer for Tinycast.
 		r: {
-			1: open('raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1'),
-			2: open('raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2'),
-			a: open('raycast://extensions/raycast/raycast-ai/ai-chat'),
-			b: open('raycast://extensions/raycast/system/toggle-bluetooth'),
-			c: open('raycast://extensions/raycast/system/open-camera'),
-			e: open('raycast://extensions/raycast/emoji-symbols/search-emoji-symbols'),
-			h: open('raycast://extensions/raycast/clipboard-history/clipboard-history'),
-			n: open('raycast://script-commands/dismiss-notifications'),
-			p: open('raycast://extensions/raycast/raycast/confetti'),
-			t: open('raycast://extensions/raycast/system/toggle-system-appearance'),
+			1: open('tinycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1'),
+			2: open('tinycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2'),
+			a: tinycast('ai'),
+			b: tinycast('bluetooth'),
+			c: tinycast('camera'),
+			e: tinycast('emoji'),
+			h: tinycast('clipboard'),
+			n: tinycast('notifications'),
+			t: tinycast('appearance'),
 		},
-		open_bracket: open('raycast://extensions/raycast/window-management/left-half'),
-		close_bracket: open('raycast://extensions/raycast/window-management/right-half'),
-		return_or_enter: open('raycast://extensions/raycast/window-management/maximize'),
+		open_bracket: tinycast('leftHalf'),
+		close_bracket: tinycast('rightHalf'),
+		return_or_enter: tinycast('maximize'),
 		tab: {
 			to: [{ key_code: 'tab', modifiers: ['left_control'] }],
 		},

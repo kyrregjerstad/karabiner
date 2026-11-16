@@ -85,6 +85,8 @@ export const complexModifications: KarabinerRule[] = [
 		open_bracket: tinycast('leftHalf'),
 		close_bracket: tinycast('rightHalf'),
 		return_or_enter: tinycast('maximize'),
+		left_arrow: tinycast('previousDisplay'),
+		right_arrow: tinycast('nextDisplay'),
 		tab: {
 			to: [{ key_code: 'tab', modifiers: ['left_control'] }],
 		},

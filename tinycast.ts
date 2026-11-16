@@ -15,6 +15,8 @@ const bindings = {
 	leftHalf: ['windowCommand.left-half', 'open_bracket', 33, hyper],
 	rightHalf: ['windowCommand.right-half', 'close_bracket', 30, hyper],
 	maximize: ['windowCommand.maximize', 'return_or_enter', 36, hyper],
+	previousDisplay: ['windowCommand.previous-display', 'left_arrow', 123, hyper],
+	nextDisplay: ['windowCommand.next-display', 'right_arrow', 124, hyper],
 } satisfies Record<string, [string, KeyCode, number, ModifierKeyCode[]]>;
 
 export function tinycast(command: keyof typeof bindings): LayerCommand {

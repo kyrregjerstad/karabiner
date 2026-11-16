@@ -64,6 +64,7 @@ history, N to dismiss notifications, or T for system appearance. Keys 1 and 2
 run Toothpick's favorite-device commands, which require Toothpick installed and
 its favorites configured in Tinycast. Confetti has no equivalent and is unbound.
 Caps Lock + [ / ] / Enter runs left half / right half / maximize.
+Caps Lock + Left / Right moves the window to the previous / next display.
 
 Tinycast 0.12.1 supports extension URLs, but native commands require hotkeys.
 `tinycast.ts` defines the shortcuts emitted by Karabiner. Run `bun run tinycast.ts`

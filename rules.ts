@@ -60,6 +60,7 @@ export const complexModifications: KarabinerRule[] = [
 		b: app('Helium'),
 		c: app('Zed'),
 		j: { to: [{ shell_command: "open -a 'T3 Code (Beta).app'" }] },
+		k: { to: [{ shell_command: "open -a 'Daylight.app'" }] },
 		l: { to: [{ shell_command: "open -a 'Linear.app'" }] },
 		m: app('Spotify'),
 		t: {

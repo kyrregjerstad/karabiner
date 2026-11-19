@@ -148,6 +148,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -263,6 +268,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -385,6 +395,134 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_l",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_m",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_t",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_p",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_f",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_s",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_n",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_open_bracket",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_close_bracket",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_return_or_enter",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_left_arrow",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_right_arrow",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_tab",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Hyper Key + k",
+            "manipulators": [
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'Daylight.app'"
+                  }
+                ],
+                "type": "basic",
+                "from": {
+                  "key_code": "k",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper",
+                    "value": 1
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_b",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_c",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -499,6 +637,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -622,6 +765,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -736,6 +884,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -859,6 +1012,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -974,6 +1132,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -1097,6 +1260,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -1216,6 +1384,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -1331,6 +1504,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -1456,6 +1634,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -1840,6 +2023,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -1961,6 +2149,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -2090,6 +2283,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -2211,6 +2409,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
@@ -2340,6 +2543,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_k",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_l",
                     "value": 0
                   },
@@ -2457,6 +2665,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_j",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_k",
                     "value": 0
                   },
                   {
